@@ -8,31 +8,31 @@ import LocalLibraryIcon from '@material-ui/icons/LocalLibrary';
 export const NavData = [
     {
         title: 'Home',
-        path: '/',
+        path: 'home',
         icon: <HomeIcon />,
         className: 'nav-text'
     },
     {
         title: 'About',
-        path: '/about',
+        path: 'about',
         icon: <PersonIcon />,
         className: 'nav-text'
     },
     {
         title: 'Skills',
-        path: '/skills',
+        path: 'skills',
         icon: <BarChartIcon />,
         className: 'nav-text'
     },
     {
         title: 'Experience',
-        path: '/experience',
+        path: 'experience',
         icon: <BusinessCenterIcon />,
         className: 'nav-text'
     },
     {
         title: 'Education',
-        path: '/education',
+        path: 'education',
         icon: <LocalLibraryIcon />,
         className: 'nav-text'
     }

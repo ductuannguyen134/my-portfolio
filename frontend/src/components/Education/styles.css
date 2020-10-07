@@ -1,0 +1,62 @@
+.education__header{
+    background-color: #4C4C4C;
+    text-align: center;
+    color: white;
+    font-family: serif;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.education__body {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.education__body > .edu-container {
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 25px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    display: block;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: black;
+    min-width: 1000px;
+    width: fit-content;
+    background-color: white;
+}
+
+.edu-container > h3 {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.edu-container > p {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.edu-container.content {
+    color: black;
+    padding: 40px;
+}
+
+.education__header.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.edu-title{
+    font-size: 25px;
+}
+
+.edu-content{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import MenuIcon from '@material-ui/icons/Menu';
 import { IconButton } from '@material-ui/core';
 import './styles.css';
-import {NavData} from './NavData';
-import { Link } from 'react-router-dom';
+import {NavData} from '../../data/NavData';
+// import { Link } from 'react-router-dom';
 import ClearIcon from '@material-ui/icons/Clear';
+import {Link} from 'react-scroll';
 
 function NavBar() {
 
@@ -23,7 +24,7 @@ function NavBar() {
                 {NavData.map((item,index)=>(
                     <>
                         <li key={index} className={item.className}>
-                            <Link to={item.path} className="menu-bars">
+                            <Link activeClass="active" spy={true} smooth={true} offset={50} duration={500} to={item.path} className="menu-bars">
                                 {item.icon}
                                 <span>{item.title}</span>
                             </Link>
@@ -31,7 +32,6 @@ function NavBar() {
                     </>
                 ))}
             </nav>
-
         </div>
     )
 }

@@ -1,9 +1,16 @@
-import React from 'react'
+import React from 'react';
+import About from '../../components/About';
+import Skills from '../../components/Skills';
+import Experience from '../../components/Experience';
+import Education from '../../components/Education';
 
 function Home() {
     return (
         <div>
-            <h1>This is Home Page</h1>
+            <About />
+            <Skills />
+            <Experience />
+            <Education />
         </div>
     )
 }
