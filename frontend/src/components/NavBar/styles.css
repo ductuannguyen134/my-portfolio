@@ -1,0 +1,67 @@
+.navBar__main {
+    float: left;
+    position: fixed;
+}
+
+.navBar__list {
+    position: relative;
+    background-color: #535353;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 250px;
+    top: 0;
+    left: -100%;
+    transition: 350ms;
+}
+
+.navBar__list.active {
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    width: 100%;
+}
+
+.nav-text > a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.nav-text > a:hover {
+    background-color: #1C1C1C;
+}
+
+.navBar__button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: left;
+}
+
+.navBar__button > .MuiButtonBase-root {
+    color: white;
+}
+
+.navBar__button > .MuiButtonBase-root:hover {
+    opacity: 0.5;
+}
+
+.navBar__main > .MuiSvgIcon-root {
+    width: 2em;
+    height: 2em;
+}
