@@ -3,7 +3,7 @@ import {Container, Avatar} from '@material-ui/core';
 import './styles.css';
 import pic from './tuan.jpg';
 import {summaryData, contactData} from '../../data/aboutData';
-import resume from '../../data/resume.pdf';
+import resume from '../../data/resume2.pdf';
 
 function About() {
 
@@ -27,12 +27,12 @@ function About() {
 
     return (
         <div className="about"  ref={ref} id="about">
+        
             <div className={isSticky ? "about__header sticky" : "about__header"}>
                 <h1>ABOUT ME</h1>
             </div>
             <div className="about__main">
                 <div className={appear ? "about__body fade" : "about__body"}>
-
                     <div  className="container profile-pic">
                         <img src={pic} alt="profile-pic" width="400" />
                     </div>
